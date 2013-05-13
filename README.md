@@ -1,6 +1,6 @@
 #JS-Queue.js
 
-js-queue.js is a utility module which provide functions for operating with hash-table. It can be used both in the [node.js](http://nodejs.org) and browser.
+js-queue.js is a utility module which provide functions for operating with job queue. It can be used both in the [node.js](http://nodejs.org) and browser.
 
 ##Download
 
