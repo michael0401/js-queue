@@ -117,7 +117,7 @@ __Example:__
     Q.pending();
   
 <a name="running" />
-### runrunning
+### running
 
 Return the length of the running array.
 
