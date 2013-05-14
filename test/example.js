@@ -1,3 +1,5 @@
+/*Modified by Xuan to test clear() and functions with multiply arguements*/
+
 require('../index');
 var test = require('tape');
 

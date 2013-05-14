@@ -135,7 +135,8 @@
 			this.Pending.pop();
 		}
 		this.cleared = true;
-		this.afterFunc.apply(this, this.afterFuncArgs);
+		//this.afterFunc(this.afterFuncArgs);     //Commented by Xuan
+		this.afterFunc.apply(this, this.afterFuncArgs);//Newly added by Xuan
 		return this;		
 	};
 
