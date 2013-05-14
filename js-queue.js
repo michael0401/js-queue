@@ -135,7 +135,7 @@
 			this.Pending.pop();
 		}
 		this.cleared = true;
-		this.afterFunc(this.afterFuncArgs);
+		this.afterFunc.apply(this, this.afterFuncArgs);
 		return this;		
 	};
 
