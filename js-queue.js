@@ -141,7 +141,10 @@
 	    }
 		exports.queue = queue;
 	} else {
-		global.queue = queue;
+		if (typeof global.UTIL !== 'undefined') {
+			global.UTIL = {};
+		}
+		global.UTIL.queue = queue;
 	}
 	
 }(this));
