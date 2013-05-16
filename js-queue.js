@@ -23,13 +23,6 @@
 
 (function(global) {
 	"use strict";
-	var queueUtils;
-	
-	if (typeof exports !== 'undefined') {
-		queueUtils = exports;
-	} else {
-		queueUtils = global.queueUtils = {};
-	}
 	
 	var Queue = function() {};
 
@@ -139,9 +132,18 @@
 		return this;		
 	};
 
-	queueUtils.Queue = function () {
+	var queue = function () {
 		return new Queue._Methods();
 	};
+
+	if (typeof exports !== 'undefined') {
+		if (typeof module !== 'undefined' && module.exports) {
+	      exports = module.exports = queue;
+	    }
+		exports.queue = queue;
+	} else {
+		global.queue = queue;
+	}
 	
 }(this));
 

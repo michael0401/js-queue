@@ -2,7 +2,7 @@ require('../index');
 var test = require('tape');
 
 test('js-queue', function(t) {	
-	var Q = queueUtils.Queue();
+	var Q = queue();
 	
 	t.plan(3);
 	t.equal(typeof Q.max, 'function');

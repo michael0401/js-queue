@@ -1,2 +1,2 @@
-queueUtils = require('./js-queue');
+queue = require('./js-queue');
 
