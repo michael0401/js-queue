@@ -1,16 +1,16 @@
-#JS-Queue.js
+#js-queue.js
 
-js-queue.js is a utility module which provide functions for operating with job queue. It can be used both in the [node.js](http://nodejs.org) and browser.
+Handy methods for adding queue functionality to any Javascript object.
 
 ##Download
 
-The source code is available for download from [GitHub](https://github.com/rranauro/js-queue). Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
+The source code is available for download from [GitHub](https://github.com/rranauro/js-queue). 
+Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
 
     npm install js-queue
 
 ##Documentation
 
-* [queueUtils.Queue](#queueUtils.Queue)
 * [submit](#submit)
 * [finish](#finish)
 * [max](#max)
@@ -21,14 +21,12 @@ The source code is available for download from [GitHub](https://github.com/rrana
 * [running](#running)
 * [clear](#clear)
 
-<a name="queueUtils.Queue" />
-### queueUtils.Queue()
 
 Initialize and return a queue object, which contains one __running array__ (stores the jobs being processed) and one __pending array__ (stores the jobs waiting to be processed). 
 
 __Example:__
 
-    var Q = queueUtils.Queue()
+    var queue = require('js-queue');
     
 <a name="submit" />
 ### submit(function, argument1, argument2, argument3...)
@@ -53,7 +51,8 @@ __Example:__
 <a name="finish" />
 ### finish()
 
-Remove a function from running array of the queue. Called by the application when the job finishes. If the queue is empty, run the 'afterFunc', if one was supplied.
+Remove a function from running array of the queue. 
+Called by the application when the job finishes. If the queue is empty, run the 'afterFunc', if one was supplied.
 
 __Example:__
 
