@@ -141,7 +141,7 @@
 	    }
 		exports.queue = queue;
 	} else {
-		if (typeof global.UTIL !== 'undefined') {
+		if (typeof global.UTIL === 'undefined') {
 			global.UTIL = {};
 		}
 		global.UTIL.queue = queue;
