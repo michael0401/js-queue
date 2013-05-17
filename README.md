@@ -1,15 +1,14 @@
 #js-queue.js
 
+##Overview
+
 Handy methods for adding queue functionality to any Javascript object.
 
-##Download
+##Example
 
-The source code is available for download from [GitHub](https://github.com/rranauro/js-queue). 
-Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
+[Link]()
 
-    npm install js-queue
-
-##Documentation
+##Methods
 
 * [submit](#submit)
 * [finish](#finish)
@@ -133,3 +132,11 @@ __Example:__
 
     Q.clear();
   
+##Install
+
+The source code is available for download from [GitHub](https://github.com/rranauro/js-queue). 
+Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
+
+    npm install js-queue
+
+##License
